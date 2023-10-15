@@ -89,7 +89,7 @@ main p {
 
 button {
     display: inline-block;
-    background-color: #A62408;
+    background-color: #5E7B7E;
     color: #f4f4f4;
     border: none;
     padding: 10px 20px;
@@ -99,41 +99,6 @@ button {
 }
 
 button:hover {
-    background-color: #39977d;
-}
-
-form {
-    margin-top: 20px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-form input[type="submit"] {
-    display: inline-block;
-    background-color: #50b3a2;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-form input[type="submit"]:hover {
     background-color: #39977d;
 }
 
@@ -173,31 +138,49 @@ footer ul li a:hover {
 
 }
 
-.splash-body {
-    background-image: url('splash.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.splash-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Viewport height */
     margin: 0;
-    font-family: 'Lucida Grande',monospace;
-    color: white;
+    overflow: hidden; /* To prevent scrolling if the container goes out of viewport */
 }
 
-.splash-content {
+.splash-page .splash-container {
+    width: 800px; /* Set to your image's width */
+    height: 800px; /* Set to your image's height */
+    background-image: url('splash.jpg');
+    background-size: 800px 800px; /* Set to your image's dimensions */
+    background-position: center;
+    position: relative;
+}
+
+.splash-page .splash-content {
     position: absolute;
-    top: 44px;
-    left: 135px;
+    top: 20px; /* Adjust based on where you want it on the image */
+    left: 30px; /* Initially at the top-left of the container */
 }
 
-.splash-content h2 {
+@media (max-width: 820px) { /* Little more than the width of the container + content space */
+    .splash-page .splash-content {
+        position: fixed; /* This will fix the position relative to the viewport */
+        top: 20px; 
+        left: 10px; /* Now it's top-left of the viewport */
+    }
+}
+
+.splash-page .splash-content h2 {
     display: inline;
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.splash-content a {
+.splash-page .splash-content a {
     margin-left: 15px;
     text-decoration: none;
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border: 1px solid white;
     padding: 5px 10px;
 }
