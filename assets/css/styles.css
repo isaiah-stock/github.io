@@ -150,7 +150,7 @@ footer ul li a:hover {
 .splash-page .splash-container {
     width: 800px; /* Set to your image's width */
     height: 800px; /* Set to your image's height */
-    background-image: url('splash.jpg');
+    background-image: url('../img/splash.jpg');
     background-size: 800px 800px; /* Set to your image's dimensions */
     background-position: center;
     position: relative;
