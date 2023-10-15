@@ -155,7 +155,7 @@ footer ul li a:hover {
     background-position: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Grande',monospace;
     color: white;
 }
 
@@ -175,6 +175,7 @@ footer ul li a:hover {
     color: white;
     border: 1px solid white;
     padding: 5px 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .splash-content a:hover {
