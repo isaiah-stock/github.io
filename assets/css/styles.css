@@ -65,6 +65,21 @@ nav ul li a:hover {
     color: black;
 }
 
+nav ul li a.active {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: #7E8A96;
+    padding: 5px 20px;
+}
+
+nav ul li a.active:hover {
+    background-color: white;
+    color: black;
+}
+
+
 main {
     max-width: 500px;
     margin-top: 200px; /* Adjust based on the height of your header */
@@ -189,3 +204,73 @@ footer ul li a:hover {
     background-color: white;
     color: black;
 }
+
+
+
+/* For the Research Compilation */
+
+/* Basic structure for the theme */
+.theme {
+    max-width: 800px;
+    margin-top: 50px; /* Adjust based on the height of your header */
+    margin-bottom: 20px; /* Added margin-bottom for spacing from the footer */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.first-child {
+    margin-top: 200px; /* Adjust based on the height of your header */
+
+}
+
+.theme h2 { /* Styling for Thematic Section Title */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Structuring individual research paper section */
+.research-paper {
+    margin-top: 20px;
+    border-top: 2px solid #D8B8A4; /* Optional: adds a separation line between papers */
+    padding-top: 20px;
+}
+
+/* Styling for research paper titles */
+.research-paper h3 {
+    font-size: 22px;
+    color: #5E7B7E;
+}
+
+/* Styling for the blockquotes (quotes from research papers) */
+blockquote {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 3px solid #5E7B7E;
+    font-style: italic;
+    background-color: #f4f4f4; /* Light background for emphasis */
+}
+
+/* Styling for any images or graphs from the research */
+figure {
+    float: right;
+    width: 30%; /* Adjust based on your design needs */
+    margin-left: 20px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777; /* Slightly greyed out for less emphasis */
+}
+

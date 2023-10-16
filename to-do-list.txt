@@ -1,8 +1,9 @@
 <TO DO LIST>
 
-* Add shadow behind my text 
-* Add anti-spam verification before exposing my personal email 
-* Adding a more sophisticated header -- too basic
+* Way to click in and show the pdf on the right side of the page 
+* Way to more efficiently insert dog quotes onto my website
+
+
 
 
 
@@ -14,3 +15,12 @@
 * Business and story ideas (password protected)
 * Analytical projects
 * What I wish I would've known -- life FAQs
+
+
+<HEX COLORS>
+#E4CEBF (A soft beige)
+#BAA297 (A muted taupe)
+#7E8A96 (A calm blue-gray)
+#6D6966 (A neutral gray)
+#DDA089 (A muted coral)
+#5E7B7E (A deep teal)
